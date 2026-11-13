@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7f5">
+  <title>PeopleNest — Your team's home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+  <main class="auth-layout">
+    <section class="auth-intro">
+      <a class="brand brand-light" href="index.html"><span class="brand-symbol">P</span><span>People<span class="brand-lite">Nest</span></span></a>
+      <div class="intro-copy">
+        <span class="eyebrow">YOUR PEOPLE, IN A GOOD PLACE.</span>
+        <h1>Make work feel a little more human.</h1>
+        <p>PeopleNest brings your team's day-to-day together — check-ins, time off, people details and pay.</p>
+        <div class="intro-points"><span>✓ &nbsp;Simple attendance</span><span>✓ &nbsp;Clear leave tracking</span><span>✓ &nbsp;Made for everyday HR</span></div>
+      </div>
+      <div class="intro-footer">PeopleNest <span>·</span> A thoughtful home for your team's everyday</div>
+    </section>
+    <section class="auth-form-side">
+      <div class="mobile-brand"><span class="brand-symbol">P</span><span>People<span class="brand-lite">Nest</span></span></div>
+      <div class="auth-card">
+        <div class="auth-heading"><span class="eyebrow" id="auth-eyebrow">WELCOME BACK</span><h2 id="auth-title">Sign in to your workspace</h2><p id="auth-description">Enter your details to continue.</p></div>
+        <div id="auth-message" class="message" hidden></div>
+        <form id="setup-form" hidden>
+          <label class="field"><span>Company name</span><input name="companyName" required maxlength="80" placeholder="e.g. Northstar Studio"></label>
+          <label class="field"><span>Admin full name</span><input name="fullName" required maxlength="80" placeholder="Your name"></label>
+          <label class="field"><span>Admin email</span><input name="email" type="email" required autocomplete="email" placeholder="you@company.com"></label>
+          <label class="field"><span>Password</span><input name="password" type="password" minlength="8" required autocomplete="new-password" placeholder="At least 8 characters"></label>
+          <label class="field"><span>Confirm password</span><input name="confirmPassword" type="password" minlength="8" required autocomplete="new-password" placeholder="Enter your password again"></label>
+          <button class="button button-primary button-wide" type="submit"><span>Create workspace</span><span>→</span></button>
+        </form>
+        <form id="login-form" hidden>
+          <label class="field"><span>Email address</span><input name="email" type="email" required autocomplete="username" placeholder="you@company.com"></label>
+          <label class="field"><span>Password</span><input name="password" type="password" required autocomplete="current-password" placeholder="Your password"></label>
+          <button class="button button-primary button-wide" type="submit"><span>Sign in</span><span>→</span></button>
+        </form>
+        <div class="auth-note"><span class="lock-icon">⌑</span> Demo app · Keep your data on this device</div>
+      </div>
+      <div class="auth-bottom">Built for better workdays <span>·</span> <a href="README.md">About this demo</a></div>
+    </section>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="js/storage.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
